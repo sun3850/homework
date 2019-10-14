@@ -2,11 +2,9 @@
 이 프로젝트는 다음 환경에서 개발되었습니다.
 
 ```
-MacOS 10.15 Catalina
+Window 10
 Android Studio
-Android 9.0 Pie, minimum 6.0
-
-Android 10.0 Q 이상의 환경에서는 저장소 권한이 강화되어 정상 작동하지 않습니다.
+Android 9.0 Pie
 ```
 
 ## 구현내용
