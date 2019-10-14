@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:id="@+id/present"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_name"
+            android:background="@null"
+            android:layout_margin="40dp"
+            android:src="@drawable/present" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/present"
+            android:text="쉽고빠른 해외 직구 통관조회"
+            android:textColor="#8ECDF7"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="커스텀"
+            android:textColor="#8ECDF7"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/user_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditText_user_name"
+                android:layout_width="336dp"
+                android:layout_height="61dp"
+                android:hint="Username"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@+id/user_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditText_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Button_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_below="@+id/password"
+            android:background="@drawable/btn_blue"
+            android:text="Login"
+            android:textColor="#ffffff"
+
+            />
+
+        <LinearLayout
+            android:layout_below="@+id/Button_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
